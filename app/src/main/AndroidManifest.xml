@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMidHomework10">
+        <activity android:name=".Ex1Page2"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Ex5"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Ex4"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Ex3"
             android:screenOrientation="portrait" />

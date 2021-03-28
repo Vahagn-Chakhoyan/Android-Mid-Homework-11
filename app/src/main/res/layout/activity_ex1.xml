@@ -6,4 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".Ex1">
 
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/_15"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/startTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="startTimer"
+        android:padding="8dp"
+        android:text="@string/start_timer"
+        app:layout_constraintEnd_toStartOf="@+id/nextPage2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/nextPage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="nextPage"
+        android:padding="8dp"
+        android:text="@string/next_page"
+        app:layout_constraintBottom_toBottomOf="@+id/startTimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/startTimer"
+        app:layout_constraintTop_toTopOf="@+id/startTimer" />
 </androidx.constraintlayout.widget.ConstraintLayout>
