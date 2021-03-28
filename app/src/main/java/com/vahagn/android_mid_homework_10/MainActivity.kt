@@ -8,11 +8,7 @@ import androidx.appcompat.widget.Toolbar
 
 class MainActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener {
     private lateinit var toolbar: Toolbar
-    private val exMap = mapOf(R.id.menuEx1 to Ex1::class.java,
-            R.id.menuEx2 to Ex2::class.java,
-            R.id.menuEx3 to Ex3::class.java,
-        R.id.menuEx4 to Ex4::class.java,
-        R.id.menuEx5 to Ex5::class.java)
+    private val exMap = mapOf(R.id.menuEx1 to Ex1::class.java)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
